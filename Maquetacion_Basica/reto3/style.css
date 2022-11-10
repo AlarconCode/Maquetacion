@@ -44,7 +44,7 @@ article {
 .article-header {
     border: 2px solid lightcoral;
     width: 100%;
-    margin-bottom: 20vh;
+    margin-bottom: 20%;
 }
 
 .article-section {
@@ -53,7 +53,7 @@ article {
     height: 12vh;
 }
 
-.article-footer {
+.article-footer {    
     border: 2px solid yellowgreen;
     width: 100%;
     height: 5vh;
@@ -63,13 +63,12 @@ article {
     padding: 5px;
     width: 30%;
     border: 2px solid orange;
-    overflow: hidden;
 }
 
 aside {
     border: 2px solid orange;
     width: 100%;
-    height: 32vh;
+    height: 32.3vh;
     margin-top: 5px;
 }
 
