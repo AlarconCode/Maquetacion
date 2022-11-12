@@ -89,38 +89,114 @@ article.hero-img {
 
 article.container {
     width: 100%;
-    height: 140vh;
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
     background-color: #000;
-    color: #fff;    
-}
-
-.objetivo-container {
-    width: 85%;
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 40px;
-    row-gap: 80px;
-    padding: 100px
+    color: #fff;
+    padding: 20px 120px; 
+    margin-bottom: 5px;   
 }
 
 .objetivo-title {
     font-size: 48px;
-    width: 60%;
+    width: 55%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.objetivo-container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    margin-bottom: 50px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+
+.objetivo-text_1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.7;
 }
 
 .objetivo-text {
-    font-weight: 700;
     font-size: 24px;
-    flex-grow: 2;
-    flex-basis: 50%;
     line-height: 1.7;
 }
 
 .objetivo-img {
     width: 40%;
-    height: 80%;
-    flex-grow: 2;
+}
+
+/* Cursos */
+
+.cursos-container {
+    margin-top: 50px;
+}
+
+.header-cursos {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 50px;
+}
+
+.cursos-title {
+    font-size: 48px;
+    flex-basis: 20%;
+}
+
+.cursos-description {
+    font-size: 24px;
+    flex-basis: 60%;
+    line-height: 1.7;
+}
+
+.cursos-card-container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    margin-bottom: 50px;
+}
+
+.curso {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 100px;
+    background-color: white;
+    color: #222222;
+}
+
+.curso-modalidad {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.curso-title {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.curso-description {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.curso-boton_info {
+    text-decoration: none;
+    background-color: #222222;
+    color: white;
+    font-size: 16px;
+    padding: 10px 25px;
+    width: 50%;
+    margin-top: 20px;
+}
+
+footer {
+    height: 100px;
+    background-color: #0707b7;
 }
