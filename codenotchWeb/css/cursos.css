@@ -1,0 +1,85 @@
+/* css cursos.html */
+
+.cursos-hero-img {
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(0, 0, 40, 0.2), rgba(0,0,20,.5)), url(../img/Imagen-pagina-principal.jpg);
+    background-size: cover;
+    color: #fff;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursos-h1-slogan {
+    flex-basis: 60%;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 40px;
+    padding: 50px 100px 50px 100px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-basis: 36%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px 2px rgba(0, 0, 40, 0.2);
+}
+
+.curso-img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.curso-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+    padding: 20px
+}
+
+.card-content h2 {
+    font-size: 24px;
+}
+
+.curso-convocatoria {
+    flex-basis: 100%;
+}
+
+.curso-convocatoria::before {
+    content: 'Próxima convocatoria: ';
+    font-weight: 700;
+}
+
+.curso-precio::before {
+    content: 'Precio: ';
+    font-weight: 700;
+    flex-basis: 100%;
+}
+
+.curso-plazas::before {
+    content: 'Plazas disponibles:  ';
+    font-weight: 700;
+    flex-basis: 100%;
+}
+

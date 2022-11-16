@@ -18,11 +18,13 @@ header {
 }
 
 nav.nav-container {
-    height: 10vh;
+    width: 100%;
+    height: 60px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #000;
+    /* position: fixed; */
 }
 
 div.logo-codenotch img {
@@ -56,7 +58,7 @@ div.menu-principal a:active {
 
 article.hero-img {
     width: 100%;
-    height:80vh;
+    height:400px;
     background-image: linear-gradient(
         to top,
         rgba(255, 255, 0, 0.5),
