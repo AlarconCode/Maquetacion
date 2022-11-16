@@ -88,7 +88,10 @@ article.hero-img {
 /* Section Objetivo y cursos */
 
 article.container {
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
     background-color: #000;
     color: #fff;
     padding: 20px 120px; 
@@ -96,22 +99,25 @@ article.container {
 }
 
 .objetivo-title {
+    align-self: flex-start;
     font-size: 48px;
-    width: 55%;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    flex-basis: 50%;
+    margin: 50px 0 50px 0;
 }
 
 .objetivo-container {
     display: flex;
     justify-content: space-between;
-    column-gap: 20px;
+    align-items: flex-start;
+    column-gap: 50px;
     margin-bottom: 50px;
 }
 
 .text-container {
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
     row-gap: 30px;
 }
 
@@ -129,6 +135,7 @@ article.container {
 
 .objetivo-img {
     width: 40%;
+    object-fit: cover;
 }
 
 /* Cursos */
@@ -164,8 +171,9 @@ article.container {
 
 .curso {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
     padding: 100px;
     background-color: white;
     color: #222222;
@@ -192,7 +200,6 @@ article.container {
     color: white;
     font-size: 16px;
     padding: 10px 25px;
-    width: 50%;
     margin-top: 20px;
 }
 
