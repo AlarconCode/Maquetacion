@@ -22,7 +22,7 @@
         </section>
     </header>
     <main>
-        <article class="card-container">
+        <!-- <article class="card-container">
             <section class="card">
                 <img src="./img/Roma.jpg" alt="imagen de roma">
                 <div class="origen-container">
@@ -143,19 +143,25 @@
                 <span class="tiempo">5 dias - 6 noches</span>
                 <span class="precio">1500€</span>
             </section>
+        </article> -->
+        <article class="card-container">
+
         </article>
         <aside class="aside-container">
             <form id="form-info" action="info">
                 <input type="text" id="nombre" placeholder="Nombre">
+                <input type="text" id="descripcion" placeholder="Descripción">
                 <input type="text" id="origen" placeholder="Origen">
                 <input type="text" id="destino" placeholder="Destino">
                 <!-- <label for="numero">Numero de personas</label> -->
-                <input type="number" id="numero" placeholder="Personas">
+                <input type="number" id="personas" placeholder="Personas">
                 <input type="date" id="fecha-inicio">
-                <input type="date" id="fecha-final">
+                <input type="date" id="fecha-fin">
+                <input type="text" id="precio" placeholder="Precio">
                 <input type="button" id="info" value="Crear Lista" onclick="getInfo()">
                 <input type="button" id="filtrar" value="Filtrar" onclick="filter()">
-                <input type="button" id="reset" value="Resetear" onclick="location.reload()">
+                <input type="file" id="imagen">
+                <!-- <input type="button" id="reset" value="Resetear" onclick="location.reload()"> -->
             </form>
         </aside>
     </main>

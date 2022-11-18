@@ -2,52 +2,45 @@ let card = document.querySelectorAll('.card')
 // console.log(arrCard);
 // console.log(card[0].children);
 
+let arrCard = []
 function getInfo() {
 
-    let arrCard = []
-    
-    for (i=0;i<card.length;i++) {
-        
-        let cardJson = {
-            img: card[i].querySelector('img').src,
-            origen: card[i].querySelector('.origen').innerHTML,
-            destino: card[i].querySelector('.destino').innerHTML,
-            titulo: card[i].querySelector('.titulo').innerHTML,
-            personas: card[i].querySelector('.personas').innerHTML,
-            descripcion: card[i].querySelector('.descripcion').innerHTML,
-            tiempo: card[i].querySelector('.tiempo').innerHTML,
-            precio: card[i].querySelector('.precio').innerHTML
-        }
-     
-        arrCard.push(cardJson)
-    }    
+    let cardJson = {
+                img: document.getElementById('imagen').value,
+                origen: document.getElementById('origen').value,
+                destino: document.getElementById('destino').value,
+                titulo: document.getElementById('nombre').value,
+                personas: document.getElementById('personas').value,
+                descripcion: document.getElementById('descripcion').value,
+                inicio: document.getElementById('fecha-inicio').value,
+                final: document.getElementById('fecha-fin').value,
+                precio: document.getElementById('precio').value
+            }
 
+    arrCard.push(cardJson)
     console.log(arrCard); 
-    return arrCard
 }
 
 
 function filter() {
-   
-    let arrCard = getInfo()
-    let inputDestino = document.getElementById('destino').value
-    let inputOrigen = document.getElementById('origen').value
-        
+
+    console.log(arrCard);
+    console.log(arrCard[0].destino.toUpperCase());
+
     let arrFilter = []
     for (i=0;i<arrCard.length;i++) {
       
-        if (inputDestino.toUpperCase() == arrCard[i].destino.toUpperCase()) {
+        if (arrCard[i].destino.toUpperCase() === 'Canarias'.toUpperCase() || arrCard[i].destino.toUpperCase() === 'Mallorca'.toUpperCase() || arrCard[i].destino.toUpperCase() === 'Galicia'.toUpperCase()) {
             
             arrFilter.push(arrCard[i])
         
         }
         
     }
-    
+
     console.log(arrFilter);
     
-    let cardContainer = document.querySelector('.card-container')
-    cardContainer.innerHTML = ''    
+    let cardContainer = document.querySelector('.card-container') 
     
     for (let i=0;i<arrFilter.length;i++) {
         
@@ -68,7 +61,8 @@ function filter() {
                     <span> personas</span>
                 </div>
                 <p class="descripcion">${arrFilter[i].descripcion}</p>
-                <span class="tiempo">${arrFilter[i].tiempo}</span>
+                <span class="fecha-inicio">${arrFilter[i].inicio}</span>
+                <span class="fecha-fin">${arrFilter[i].final}</span>
                 <span class="precio">${arrFilter[i].precio}</span>
             </section>`
     
