@@ -1,0 +1,256 @@
+/* css login Instagram by Julian Alarcón */
+
+:root {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    --ig-primary-button: rgb(0, 149, 246);
+    --ig-link: rgb(0, 55, 107);
+    --ig-secundary-text: rgb(142,142,142);
+    --ig-highlight-background: rgb(239,239,239);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    max-width: 100%;
+
+}
+
+.phone-container {
+    display: none;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex: 1 0 100%;
+}
+
+.logo-instagram {
+    width: 60%;
+}
+
+.input-container {
+    flex: 1 0 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-user {
+    padding: 0 2rem;
+}
+
+.form-user input {
+    width: 100%;
+    line-height: 1.7rem;
+    padding: 5px;
+    margin-bottom: 8px;
+}
+
+#boton {
+    border: none;
+    border-radius: 4px;
+    height: 2rem;
+    margin-top: 10px;
+    background-color: var(--ig-primary-button);
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    padding: 0;
+}
+
+
+.container-letraO {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    flex: 1;
+}
+.letraO {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.linea {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    margin: 0 5px;
+}
+
+.inicio-facebook {
+    color: #385185;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 1rem;
+    flex: 1 0 100%;
+}
+
+i.fa-square-facebook {
+    margin-right: 8px;
+    font-size: 110%;
+    text-align: center;
+}
+
+.olvidado {
+    text-align: center;
+    font-size: 12px;
+    color: var(--ig-link);
+    line-height: 16px;
+    flex: 1 0 100%;    
+}
+
+.registrarse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 14px;
+}
+
+.registrarse a {
+    margin-left: 8px;
+    color: var(--ig-primary-button);
+    font-weight: 600;
+
+}
+
+.descarga-app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2em;
+
+}
+
+.links-app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.link img {
+    height: 45px;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 2rem 0 4rem 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-basis: 80%;
+}
+
+.footer-menu-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-menu-item {
+    color: var(--ig-secundary-text);
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+
+}
+
+@media only screen and (min-width: 451px) {
+
+    .container {
+        padding: 2rem;
+    }
+
+    .section-container {
+        justify-content: center;
+        row-gap: 2rem;
+        max-width: 350px;
+    }
+
+    .form-container {
+        padding-bottom: 2rem;
+        border: 1px solid #CCD0D5;
+        background-color: #fff;
+    }
+
+    .registrarse {
+        width: 100%;
+        border: 1px solid #CCD0D5;
+        background-color: #fff
+    }
+
+    main {
+        background-color: #F2F3F5;
+    }
+
+    footer {
+        background-color: #F2F3F5;;
+    }
+
+}
+
+@media only screen and (min-width: 876px) {
+
+    .section-container {
+        max-width: 350px;
+    }
+
+    .container {
+        flex-wrap: nowrap;
+        column-gap: 40px;
+    }
+
+    .phone-container {
+        display: flex;
+        justify-content: center;
+        min-width: 400px;
+    }
+    
+    .phone-container img {
+        max-width: 500px;
+    }
+
+
+}

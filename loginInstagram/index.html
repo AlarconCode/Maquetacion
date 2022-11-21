@@ -5,28 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b9e58721ce.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main>
         <article class="container">
+            
             <section class="phone-container">
                 <img src="./img/Phone.png" alt="">
             </section>
-            <section class="form-container">
-                <img class="logo-instagram" src="./img/instagram-logo.png" alt="">
-                <form action="">
-                    <input type="text" id="user" placeholder="Teléfono, usuario o correo electrónico">
-                    <input type="password" id="password" placeholder="Contraseña">
-                    <input type="button" id="boton" value="Entrar">
-                    <div class="letraO">O</div>
-                </form>
-                <div class="inicio-facebook">Iniciar sesión con Facebook</div>
-                <div class="olvidado">¿Has olvidado la contraseña?</div>
+            
+            <section class="section-container">
+                
+                <section class="form-container">
+                    <div class="logo-container">
+                        <img class="logo-instagram" src="./img/instagram-logo.png" alt="">
+                    </div>
+                    <div class="input-container">
+                        <form class="form-user" action="">
+                            <input type="text" id="user" placeholder="Teléfono, usuario o correo electrónico">
+                            <input type="password" id="password" placeholder="Contraseña">
+                            <input type="button" id="boton" value="Entrar">
+                        </form>
+                       <div class="container-letraO">
+                        <div class="linea"></div>
+                        <div class="letraO">O</div>
+                        <div class="linea"></div>
+                       </div>
+                    </div>
+                    <div class="inicio-facebook"><i class="fa-brands fa-square-facebook"></i>Iniciar sesión con Facebook</div>
+                    <div class="olvidado">¿Has olvidado la contraseña?</div>
+                </section>
+             
+                <section class="registrarse">
+                    ¿No tienes cuenta?<a class="link-registrarse">Regístrate</a>
+                </section>
+
+                <section class="descarga-app">
+                    <p>Descarga la aplicación.</p>
+                    <div class="links-app">
+                        <a href="" class="link">
+                            <img src="https://static.cdninstagram.com/rsrc.php/v3/yZ/r/9Ao-HUFdZrR.png" alt="">
+                        </a>
+                        <a href="" class="link">
+                            <img src="https://static.cdninstagram.com/rsrc.php/v3/yd/r/xOhODS7viZl.png" alt="">
+                        </a>
+                    </div>
+                </section>
+            
             </section>
-            <section class="regitrarse">
-                ¿No tienes cuenta?<a class="link-registrarse">Regístrate</a>
-            </section>
+           
         </article>
     </main>
+    <footer>
+        <div class="footer-container">
+            <section class="footer-menu-links">
+                <div class="footer-menu-item">Meta</div>
+                <div class="footer-menu-item">Información</div>
+                <div class="footer-menu-item">Blog</div>
+                <div class="footer-menu-item">Empleo</div>
+                <div class="footer-menu-item">Ayuda</div>
+                <div class="footer-menu-item">API</div>
+                <div class="footer-menu-item">Privacidad</div>
+                <div class="footer-menu-item">Condiciones</div>
+                <div class="footer-menu-item">Cuentas destacadas</div>
+                <div class="footer-menu-item">Hashtags</div>
+                <div class="footer-menu-item">Ubicaciones</div>
+                <div class="footer-menu-item">Instagram Lite</div>
+                <div class="footer-menu-item">Subir contactos y personas no usuarias</div>
+                <div class="footer-menu-item">Aviso de privacidad de los artículos coleccionables digitales</div>
+            </section>
+        </div>
+    </footer>
 </body>
 </html>
