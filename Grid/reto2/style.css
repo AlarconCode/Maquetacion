@@ -1,0 +1,35 @@
+/* grid fr */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.superGrid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.grid-container {
+
+    height: 500px;
+    display: grid;
+    grid-template: 2fr 1fr / 2fr 1fr 2fr;
+    
+}
+
+.a, .c, .e {
+    background-color: greenyellow;
+}
+
+.b, .d, .f {
+    background-color: black;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orange;
+    font-size: 32px;
+}

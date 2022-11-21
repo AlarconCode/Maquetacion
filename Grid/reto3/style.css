@@ -1,0 +1,144 @@
+/* grid lineas nombradas */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    height: 85vh;
+    display: grid;
+    grid-template-columns: [left0] 6fr [middle1] 2fr [right0] ;
+    grid-template-rows: [top0] 2fr [middle1] 4fr [bottom0];
+}
+
+article {
+    grid-column: left0/middle1;
+    grid-row: top0/bottom0;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: [left0] 4fr [middle0] 2fr [right0];
+    grid-template-rows: [top0] 2fr [middle0] 6fr [bottom0];
+    padding: 20px;
+    gap: 10px
+}
+
+
+.contenido {
+    grid-column: left0/right0;
+    grid-row: top0/middle0;
+    border: solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto1 {
+    grid-column: left0/middle0;
+    grid-row: middle0/bottom0;
+    border: solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.texto2 {
+    grid-column: middle0/right0;
+    grid-row: middle0/bottom0;
+    border: solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+aside {
+    grid-column: middle1/right0;
+    grid-row: top0/bottom0;
+    background-color: green;
+    display: grid;
+    grid-template-columns: [left0] 2fr [right0];
+    grid-template-rows: [top0] 2fr [middle0] 2fr [middle1] 2fr [middle2] 2fr [bottom0];
+    padding: 20px;
+    gap: 10px
+}
+
+.menu {
+    grid-column: left0/right0;
+    grid-row: top0/middle0;
+    border: solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu1 {
+    grid-column: left0/right0;
+    grid-row: middle0/middle1;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu2 {
+    grid-column: left0/right0;
+    grid-row: middle1/middle2;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu3 {
+    grid-column: left0/right0;
+    grid-row: middle2/bottom0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer {
+    height: 60px;
+    display: grid;
+    grid-template-columns: [left] 4fr [middle] 4fr [right];
+    background-color: blueviolet;
+    padding: 5px;
+    gap:10px
+}
+
+.footer {
+    grid-column: left/middle;
+    border: solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto {
+    grid-column: middle/right;
+    border: solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

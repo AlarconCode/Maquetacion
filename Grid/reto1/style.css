@@ -1,0 +1,44 @@
+/* display Grid */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 400px 200px 400px;
+    grid-template-rows: 200px 200px;
+}
+
+.A {
+    background-color: greenyellow;
+}
+
+.B {
+    background-color: orange;
+}
+
+.C {
+    background-color:  orangered;
+}
+
+.D {
+    background-color: red;
+}
+
+.E {
+    background-color: blue;
+}
+
+.F {
+    background-color: yellow;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
