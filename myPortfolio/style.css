@@ -32,6 +32,7 @@ header {
     width: 100vw;
     position: fixed;
     top: 0px;
+    border-bottom: solid var(--green);
 }
 
 nav {
@@ -103,8 +104,8 @@ main {
 }
 
 .container {
-    height: 100vh;
-    padding: 100px 0;
+    min-height: 100vh;
+    padding: 100px 100px;
 }
 
 .section-hero-container {
@@ -129,10 +130,16 @@ main {
 
 .column h2 {
     font-family: var(--font-sans);
-    color: var(--slate);
+    color: var(--lightest-slate);
     font-size: 4.5rem;
+    text-align: center;
     letter-spacing: 2px;
     margin-bottom: 1rem;
+}
+
+.column h2:nth-child(3) {
+    color: var(--slate);
+    font-size: 3rem;
 }
 
 .column p {
