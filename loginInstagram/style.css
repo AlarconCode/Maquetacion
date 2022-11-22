@@ -26,9 +26,9 @@
 .section-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-    max-width: 100%;
+    justify-content: center;
+    flex: 0 1 auto;
+    max-width: 350px;
 
 }
 
@@ -184,8 +184,8 @@ footer {
 .footer-menu-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: space-evenly;
+    gap: 1rem;
+    justify-content: center;
     align-items: center;
 }
 
@@ -207,6 +207,7 @@ footer {
         justify-content: center;
         row-gap: 2rem;
         max-width: 350px;
+        flex: 0 0 auto;
     }
 
     .form-container {
@@ -234,6 +235,7 @@ footer {
 @media only screen and (min-width: 876px) {
 
     .section-container {
+        flex: 0 0 auto;
         max-width: 350px;
     }
 
@@ -245,11 +247,25 @@ footer {
     .phone-container {
         display: flex;
         justify-content: center;
-        min-width: 400px;
+        flex: 0 0 auto;
+        position: relative;
     }
     
     .phone-container img {
         max-width: 500px;
+    }
+
+    .phone-img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 63px;
+        top: 30px
+    }
+
+    .phone-img {
+        width: 269px;
     }
 
 
