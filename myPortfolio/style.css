@@ -128,7 +128,7 @@ main {
     min-width: 100vw;
     min-height: 100vh;
     padding: 50px 100px;
-    animation: container-position ease-in 0.5s;
+    animation: container-position ease-in 2s;
 }
 
 @keyframes container-position {
@@ -287,28 +287,37 @@ h1.title::after {
 }
 
 .img-about {
-
     z-index: 10;
     height: 300px;
     border-radius: 8px;
     background-color: var(--green);
     transition: height ease 2s;
-}
-
-.img-about:hover {
-    height: 10px;
+    position: relative;
 }
 
 .img-about img {
-    z-index: 10;
     width: 300px;
     border-radius: 8px;
-    opacity: 0.6;
+    opacity: 0.2;
     transition: opacity ease 2s;
 }
 
 .img-about img:hover {
     opacity: .9;
+}
+
+.line-square {
+    border: solid var(--green);
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.line-square:hover {
+    transform: translate(-5px, -5px);
 }
 
 /* .social-media-container {
