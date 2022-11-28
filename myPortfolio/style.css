@@ -32,11 +32,8 @@ a:hover {
 /* Header */
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: var(--navy);
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 0px;
     border-bottom: solid var(--green);
@@ -76,7 +73,8 @@ nav {
 
 .menu-links-container {
     margin-right: 4rem;
-    flex: 0 1 30%;
+    flex: 0 1 auto;
+    max-width: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -124,7 +122,7 @@ main {
 .container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     min-width: 100vw;
     min-height: 100vh;
     padding: 50px 100px;
@@ -227,7 +225,7 @@ main {
 .section-about-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 100px;
+    padding: 100px 10rem 50px;
 }
 
 h1.title {
