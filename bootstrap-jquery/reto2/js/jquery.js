@@ -25,13 +25,19 @@ $(function () {
       clickOnAddToCart: function($addTocart){
         goToCartIcon($addTocart);
       },
-      // getDiscountPrice: function(products) {
-      //   var total = 0;
-      //   $.each(products, function(){
-      //     total += this.quantity * this.price;
-      //   });
-      //   return total * 0.5;
-      // }
+      getDiscountPrice: function(products) {
+        var total = 0;
+        $.each(products, function(){
+          total += this.quantity * this.price;
+        });
+        return total * 0.5;
+      },
+      getTotalQuantity: function (products) {
+        $.each(products, function() {
+          totalQuantity += this.quantity
+        })
+        console.log(totalQuantity); 
+      } 
     });
   
   });
