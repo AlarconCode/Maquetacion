@@ -25,6 +25,10 @@ body {
     background-color: var(--navy);
 }
 
+p {
+    color: var(--slate);
+}
+
 a:hover {
     color: var(--green);
     transition: color ease-in-out 1s;
@@ -101,14 +105,20 @@ nav {
     font-family: var(--font-mono);
 }
 
-.work::before {
+.skill::before {
     content: '02.';
     color: var(--green);
     font-family: var(--font-mono);
 }
 
-.contact::before {
+.works::before {
     content: '03.';
+    color: var(--green);
+    font-family: var(--font-mono);
+}
+
+.contact::before {
+    content: '04.';
     color: var(--green);
     font-family: var(--font-mono);
 }
@@ -218,24 +228,25 @@ main {
 
 /* css sobre mi */
 
-.wrapper {
+.sectionContainer {
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    min-height: 90vh;
-}
-
-.sectionContainer {
-    flex: 0 0 60%;
+    width: 60%;
+    min-height: 100vh;
+    row-gap: 10px;
     padding: 20px;
 }
 
 .sectionHead {
     padding: 20px 0;
+    align-self: flex-end;
 }
 
 .aboutContainer {
+    align-self: flex-start;
     padding: 2rem;
     border: 1px solid var(--green);
 }
@@ -248,8 +259,15 @@ h1.title {
     color: var(--lightest-slate);
 }
 
-h1.title::before {
+h1.title.about::before {
     content: '01. ';
+    font-family: var(--font-mono);
+    color: var(--green);
+    font-size: 1.4rem;
+}
+
+h1.title.skill::before {
+    content: '02. ';
     font-family: var(--font-mono);
     color: var(--green);
     font-size: 1.4rem;
@@ -271,6 +289,12 @@ h1.title::after {
     line-height: 1.7;
 }
 
+/* Skills */
+
+.skillContainer {
+    align-self: flex-start;
+}
+
 .skillGrid {
     display: flex;
     flex-wrap: wrap;
@@ -280,6 +304,11 @@ h1.title::after {
 }
 
 .itemContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 12px;
     width: 150px;
     height: 150px;
 }
@@ -289,10 +318,17 @@ h1.title::after {
 }
 
 .itemContainer i {
-    display: block;
-    line-height: 90px;
     text-align: center;
     font-size: 3rem;
+    color: var(--lightest-slate);
+}
+
+.icono {
+    width: 3rem;
+}
+
+.icono:hover {
+    fill: var(--green);
 }
 
 .itemContainer i:hover {
@@ -302,8 +338,60 @@ h1.title::after {
 .itemContainer p {
     letter-spacing: 1px;
     text-align: center;
+    color: var(--lightest-slate);
 }
 
+/* Works */
+
+.worksContainer {
+    align-self: flex-start;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: solid var(--green);
+}
+
+.cardWork {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cardWorkImg {
+    flex: 0 0 47%;
+}
+
+.cardWorkTitle {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+    font-family: var(--font-mono);
+    font-size: 2rem;
+}
+
+.cardWorkImg img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.cardWorkDescription {
+    flex: 0 0 47%;
+}
+
+.cardWorkDescription p {
+    font-family: var(--font-sans);
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+.skillsUsed {
+    width: 100%;
+    padding: 10px;
+}
+
+.skillsUsed i {
+    font-size: 2rem;
+    padding: 10px;
+    color: var(--green);
+}
 
 /* .social-media-container {
     width: 40px;
